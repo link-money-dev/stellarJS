@@ -1,0 +1,111 @@
+.dataTables_wrapper .dataTables_filter input{
+    margin-top: 7px;
+    height: 17px;
+    width: 500px;
+}
+
+div.dataTables_length select {
+    width: 75px;
+    height: 25px;
+    margin-top: 7px;
+}
+
+.default-tabs{
+    margin: 0;
+}
+
+.widget-content-padding{
+    padding: 0;
+}
+
+.jarviswidget > header h2, .fc-header-title h2{
+    font-size: 15px;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+    margin-top: 0;
+}
+
+div.dataTables_length select{
+    margin-top: 0;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate{
+    margin-top: 7px;
+    margin-left: 0.5em;
+}
+
+.jarviswidget.login{
+    width: 80%;
+    max-width: 800px;
+    margin: 180.5px auto 0;
+    left: 0;
+    position: relative;
+}
+
+.progress{
+    margin-bottom: 0;
+    margin-left: 14px;
+}
+
+.control-group{
+    padding: 10px 20px 10px;
+}
+
+.form-horizontal .control-label{
+    padding-top: 2px;
+}
+
+.label-success, .badge-success{
+    float: left;
+    margin-top: 3px;
+}
+
+.form-horizontal .control-label{
+    max-width: 130px;
+}
+
+.well.light{
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+}
+
+.btn-link:hover, .btn-link, .btn-link:active, .btn-link[disabled]{
+    border: none;
+    padding: 0;
+}
+.modal{
+    width: 100%;
+}
+
+aside ul.menu > li > ul > li a.expanded{
+    background-color: darksalmon;
+}
+
+.radio input[type="radio"],.checkbox input[type="checkbox"]{
+    float:left;
+    margin-left:0px;
+}
+.radio.inline{
+    margin-right: 25px;
+    margin-top: 5px;
+}
+label{
+    margin-top: 5px;
+}
+
+.jarviswidget{
+    margin                : 0 0 30px 0;
+    position              : relative;
+    -moz-border-radius    : 3px;
+    -khtml-border-radius  : 3px;
+    -webkit-border-radius : 3px;
+    border-radius         : 3px;
+    padding               : 0;
+    box-shadow 			  : 0 1px 1px #E6E6E6;
+    -webkit-box-shadow: 5px 5px 10px #888;
+}
+
+
+
