@@ -102,7 +102,7 @@
 			<div class="contained">
 
 				<!-- theme name -->
-				<h1> <span class="hidden-phone">Fx：一个基于联金区块链的控制面板</span> </h1>
+				<h1> Fx：一个基于联金区块链的控制面板 </h1>
 				<!-- end theme name -->
 
 				<!-- span4 -->
@@ -111,10 +111,7 @@
 					<div id="theme-switcher" class="btn-toolbar">
 
 						<!-- search and log off button for phone devices -->
-						<div class="btn-group pull-right visible-phone">
-							<a href="javascript:void(0)" class="btn btn-inverse btn-small"><i class="icon-search"></i></a>
-							<a href="login.html" class="btn btn-inverse btn-small"><i class="icon-off"></i></a>
-						</div>
+
 						<!-- end buttons for phone device -->
 					</div>
 					<!-- end demo theme switcher-->
@@ -152,7 +149,7 @@
 					<input class="btn btn-primary" style="float: left" type="button" id="generate-btn" value="生成随机钥匙对" onclick="generateKeyPair()"/>
 				</div>
 				<div style="text-align: right;">
-					<input class="btn btn-info" type="submit" value="登录" id="login-btn" onclick="login()"/>
+					<input class="btn btn-info" type="button" value="登录" id="login-btn" onclick="login()"/>
 				</div>
 			</div>
 			</form>
@@ -239,8 +236,8 @@
             var publicKey=StellarSdk.Keypair.fromSecret(secretInput.value).publicKey()
             cookie.set("link_secret",secretInput.value,0)
 			cookie.set("link_address",publicKey,0)
-            getMyAssets(publicKey)
-			readAccount(publicKey)
+            //getMyAssets(publicKey)
+			//readAccount(publicKey)
 			window.location.href="account.html"
 		}
 		else {

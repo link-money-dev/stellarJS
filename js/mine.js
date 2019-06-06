@@ -314,8 +314,9 @@ function checkLogin() {
 function login(secretKey) {
     cookie.set("link_secret",secretKey,0)
     var publicKey=StellarSdk.Keypair.fromSecretKey(secretKey)
+    getMyAssets(publicKey)
     readAccount(publicKey)
-    localStorage.setItem("myAssets",getMyAssets(publicKey))
+
     // window.myAssets=getMyAssets()
 }
 
@@ -351,7 +352,7 @@ function getMyAssets(accountID) {
         }
         xmlhttp.onreadystatechange=function()
         {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            if (xmlhttp.readyState==4 && xmlhttp.status==200 )
             {
                 resonseText=eval('(' + xmlhttp.responseText + ')');
                 if(resonseText.hasOwnProperty('status') && resonseText.status===400){

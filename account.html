@@ -116,8 +116,7 @@
 
                         <!-- search and log off button for phone devices -->
                         <div class="btn-group pull-right visible-phone">
-                            <a href="javascript:void(0)" class="btn btn-inverse btn-small"><i class="icon-search"></i></a>
-                            <a href="login.html" class="btn btn-inverse btn-small"><i class="icon-off"></i></a>
+                            <a onclick="logout()" class="btn btn-inverse btn-small"><i class="icon-off"></i></a>
                         </div>
                         <!-- end buttons for phone device -->
 
@@ -819,7 +818,7 @@
         }
         document.getElementById("profile_name").innerHTML=address;
         var address=cookie.get("link_address").toString();
-
+        getMyAssets(address)
         //
         readAccount(address);
     } );
